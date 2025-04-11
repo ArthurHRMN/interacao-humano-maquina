@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interação Humano-Computador</title>
+  <style>
+    body {
+      background-color: #f5f5dc;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .pagina {
+      display: none;
+      padding: 30px;
+      text-align: center;
+    }
+    .pagina.ativa {
+      display: block;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .caixa {
+      background-color: white;
+      border: 2px solid #d2b48c;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 800px;
+      border-radius: 15px;
+    }
+    .botao {
+      background-color: white;
+      border: 2px solid #d2b48c;
+      padding: 10px 20px;
+      margin: 20px 10px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .botao:hover {
+      background-color: #f0e6d6;
+    }
+    .letra-jogo {
+      color: goldenrod;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .letra-jogo.certa {
+      color: green;
+      pointer-events: none;
+    }
+    .creditos {
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #444;
+    }
+    .destaque-ihc {
+      font-size: 2.5em;
+      color: darkblue;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Página 1 - INTERAÇÃO -->
+<div class="pagina ativa" id="pagina1">
+  <div class="caixa">
+    <h1>Interação Humano-Computador</h1>
+    <p>O estudo da <span class="letra-jogo" data-letra="I">i</span>nteração é essencial.</p>
+    <p>A <span class="letra-jogo" data-letra="N">n</span>avegação precisa ser clara.</p>
+    <p><span class="letra-jogo" data-letra="T">T</span>ecnologias centradas no usuário são o foco.</p>
+    <p><span class="letra-jogo" data-letra="E">E</span>rros devem ser evitados ou recuperáveis.</p>
+    <p>Uma boa <span class="letra-jogo" data-letra="R">r</span>esposta garante fluidez.</p>
+    <p>A <span class="letra-jogo" data-letra="A">a</span>cessibilidade é uma prioridade.</p>
+    <p>Design <span class="letra-jogo" data-letra="Ç">ç</span>onsidera múltiplos fatores.</p>
+    <p>Interfaces devem ser <span class="letra-jogo" data-letra="Ã">ã</span>geis.</p>
+    <p>Comportamentos esperados promovem <span class="letra-jogo" data-letra="O">o</span>timização.</p>
+    <p id="progresso1">Progresso: 0/9 letras encontradas</p>
+    <button id="botaoProxima1" class="botao" onclick="mostrarPagina(2)" style="display: none;">Próxima</button>
+  </div>
+</div>
+
+<!-- Página 2 - HUMANO -->
+<div class="pagina" id="pagina2">
+  <div class="caixa">
+    <h1>Aspectos do Humano</h1>
+    <p><span class="letra-jogo" data-letra="H">H</span>á muitos elementos que influenciam a experiência.</p>
+    <p><span class="letra-jogo" data-letra="U">U</span>suários variam muito entre si.</p>
+    <p>Capacidades <span class="letra-jogo" data-letra="M">m</span>otoras devem ser consideradas.</p>
+    <p>As <span class="letra-jogo" data-letra="A">a</span>lternativas visuais ajudam.</p>
+    <p><span class="letra-jogo" data-letra="N">N</span>unca subestime a percepção individual.</p>
+    <p>O <span class="letra-jogo" data-letra="O">o</span>lhar do usuário revela muito.</p>
+    <p id="progresso2">Progresso: 0/6 letras encontradas</p>
+    <button id="botaoProxima2" class="botao" onclick="mostrarPagina(3)" style="display: none;">Próxima</button>
+  </div>
+</div>
+
+<!-- Página 3 - COMPUTADOR -->
+<div class="pagina" id="pagina3">
+  <div class="caixa">
+    <h1>O papel do Computador</h1>
+    <p><span class="letra-jogo" data-letra="C">C</span>omputadores processam informações.</p>
+    <p>Rápido carregamento é um <span class="letra-jogo" data-letra="O">o</span>bjetivo desejável.</p>
+    <p>A <span class="letra-jogo" data-letra="M">m</span>emória do sistema influencia o desempenho.</p>
+    <p>Entrada por <span class="letra-jogo" data-letra="P">p</span>eriféricos precisa ser bem interpretada.</p>
+    <p><span class="letra-jogo" data-letra="U">U</span>tilização de IA pode ajudar.</p>
+    <p><span class="letra-jogo" data-letra="T">T</span>este constante garante usabilidade.</p>
+    <p><span class="letra-jogo" data-letra="A">A</span>lertar sobre erros é crucial.</p>
+    <p><span class="letra-jogo" data-letra="D">D</span>ados precisam ser protegidos.</p>
+    <p>Um bom sistema <span class="letra-jogo" data-letra="O">o</span>ferece feedback.</p>
+    <p>Interação exige que o <span class="letra-jogo" data-letra="R">r</span>etorno seja imediato.</p>
+    <p id="progresso3">Progresso: 0/10 letras encontradas</p>
+  </div>
+</div>
+
+<!-- Página 4 - FIM -->
+<div class="pagina" id="pagina4">
+  <div class="caixa">
+    <h1 class="destaque-ihc">Fim da apresentação: Interação Humano Máquina</h1>
+    <p class="creditos">
+      Alunos: Anthony e Arthur<br>
+      Turma: Informática 25A<br>
+      Matéria: Web Design e FDI
+    </p>
+  </div>
+</div>
+
+<script>
+function mostrarPagina(n) {
+  document.querySelectorAll(".pagina").forEach(p => p.classList.remove("ativa"));
+  document.getElementById("pagina" + n).classList.add("ativa");
+}
+
+function criarMiniGame(paginaId, letrasCorretas, botaoId, progressoId, proximaPagina = null) {
+  const letrasEncontradas = new Set();
+  const letras = document.querySelectorAll(`#${paginaId} .letra-jogo`);
+  const progresso = document.getElementById(progressoId);
+  const botao = botaoId ? document.getElementById(botaoId) : null;
+  const contador = {};
+
+  letras.forEach((letra, index) => {
+    const valor = letra.getAttribute("data-letra").toUpperCase();
+    const idUnico = `${valor}-${index}`;
+    contador[idUnico] = false;
+
+    letra.addEventListener("click", () => {
+      if (!letra.classList.contains("certa") && letrasCorretas.includes(valor)) {
+        letra.classList.add("certa");
+        contador[idUnico] = true;
+        letrasEncontradas.add(idUnico);
+        progresso.innerText = `Progresso: ${letrasEncontradas.size}/${letrasCorretas.length} letras encontradas`;
+
+        if (letrasEncontradas.size >= letrasCorretas.length) {
+          if (botao) {
+            botao.style.display = "inline-block";
+          } else if (proximaPagina) {
+            setTimeout(() => mostrarPagina(proximaPagina), 1000);
+          }
+        }
+      }
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  criarMiniGame("pagina1", ["I", "N", "T", "E", "R", "A", "Ç", "Ã", "O"], "botaoProxima1", "progresso1");
+  criarMiniGame("pagina2", ["H", "U", "M", "A", "N", "O"], "botaoProxima2", "progresso2");
+  criarMiniGame("pagina3", ["C", "O", "M", "P", "U", "T", "A", "D", "O", "R"], null, "progresso3", 4);
+});
+</script>
+
+</body>
+</html>
