@@ -95,20 +95,66 @@
     <p>A IHC busca aproximar humanos e computadores de forma eficiente, agradável e segura.</p>
     <p>Com foco nas pessoas, criamos sistemas mais humanos e acessíveis.</p>
     <p class="creditos">
-      Alunos: Anthony e Arthur<br>
-      Turma: Informática 25A<br>
-      Matéria: Web Design e FDI
-    </p>
-    <button class="botao" onclick="mostrarPagina(3)">Anterior</button>
+<!-- ... início do código permanece o mesmo -->
+
+<div class="pagina ativa" id="pagina1">
+  <div class="caixa">
+    <h1>O que significa ''IHC'' e para o que serve?</h1>
+    <img src="ihcarthur.jpg" alt="Imagem ilustrativa sobre IHC">
+    <p>A IHC é baseada tanto no conhecimento da máquina quanto no lado humano. A relação entre esses componentes é extremamente relevante, já que os computadores têm utilizações quase infinitas e existem inúmeras possibilidades de “diálogo” entre usuários e computadores.</p>
+    <p>Ao analisar a comunicação entre o usuário e a interface, empresas podem fornecer produtos digitais mais eficientes e acessíveis, de acordo com seus consumidores.</p>
+    <div style="background-color: #fff8dc; padding: 15px; border-radius: 10px; margin-top: 20px;">
+      <strong>Exemplos de aplicação da IHC:</strong>
+      <ul style="text-align: left;">
+        <li>Interfaces de aplicativos de celular</li>
+        <li>Websites acessíveis para deficientes visuais</li>
+        <li>Terminais de autoatendimento em bancos ou mercados</li>
+        <li>Assistentes virtuais como Alexa, Siri e Google Assistente</li>
+      </ul>
+    </div>
+    <button class="botao" onclick="mostrarPagina(2)">Próxima</button>
   </div>
 </div>
 
-<script>
-function mostrarPagina(n) {
-  document.querySelectorAll(".pagina").forEach(p => p.classList.remove("ativa"));
-  document.getElementById("pagina" + n).classList.add("ativa");
-}
-</script>
+<div class="pagina" id="pagina2">
+  <div class="caixa">
+    <h1>Por que precisamos de IHC?</h1>
+    <img src="ihcarthur3.jpg" alt="Imagem sobre fatores humanos">
+    <p>A Interação Humano-Computador é uma parte fundamental do mundo digital. Cada aplicativo, software e produto que construímos interage com um ser humano, e essas interações devem ser compreendidas para serem eficazes.</p>
+    <p>A IHC também torna a tecnologia mais acessível. Usuários possuem necessidades específicas, alguns podem ser idosos, outros podem apresentar deficiências intelectuais ou físicas. A Interação Humano-Computador busca entender cada usuário e como eles interagem com a tecnologia para melhorar essas interações.</p>
+    <div style="background-color: #fef9f0; padding: 15px; border-radius: 10px; margin-top: 20px;">
+      <strong>Importância da IHC:</strong>
+      <ul style="text-align: left;">
+        <li>Reduz erros de uso</li>
+        <li>Facilita o aprendizado de novos sistemas</li>
+        <li>Promove inclusão digital</li>
+        <li>Aumenta a produtividade dos usuários</li>
+      </ul>
+    </div>
+    <button class="botao" onclick="mostrarPagina(1)">Anterior</button>
+    <button class="botao" onclick="mostrarPagina(3)">Próxima</button>
+  </div>
+</div>
 
-</body>
-</html>
+<div class="pagina" id="pagina3">
+  <div class="caixa">
+    <h1>Como funciona a Interação Humano-Computador na Prática?</h1>
+    <img src="ihcarthur2.jpg" alt="Imagem de computador ou sistema digital">
+    <p>De modo geral, Interação Humano-Computador é o estudo, projeto e implementação de software para ser usado diretamente com usuários. Esses sistemas são chamados de Interface do Usuário (User Interface, UI), e é através dela que um humano irá interagir com um computador. </p>
+    <p>Entretanto, note que o campo de Interação Humano-Computador não se refere apenas ao design de uma interface gráfica do usuário (GUI) ou à criação de telas de menu. A IHC também se concentra na funcionalidade específica dos computadores e na função que eles desempenham ao lado dos seres humanos.</p>
+    <div style="background-color: #f3f3e8; padding: 15px; border-radius: 10px; margin-top: 20px;">
+      <strong>Exemplos práticos:</strong>
+      <ul style="text-align: left;">
+        <li>Design de botões e menus intuitivos em aplicativos</li>
+        <li>Uso de feedback sonoro ou visual ao clicar em algo</li>
+        <li>Implementação de acessibilidade como leitores de tela</li>
+        <li>Sistemas que adaptam a interface conforme o usuário (ex: modo noturno)</li>
+      </ul>
+    </div>
+    <button class="botao" onclick="mostrarPagina(2)">Anterior</button>
+    <button class="botao" onclick="mostrarPagina(4)">Próxima</button>
+  </div>
+</div>
+
+
+
